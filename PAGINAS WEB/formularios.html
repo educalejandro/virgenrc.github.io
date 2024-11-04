@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formularios</title>
+</head>
+<body>
+<H1>CAJAS DE TEXTO</H1>
+<P>Inserte su nombre <input type="text" name="texto" value="bla bla bla"></P>
+<p><input type="reset" value="Borrar"></p>
+<H1>CAJAS DE TEXTO con placeholder</H1>
+<p>Apellidos</p>
+<input type="text" name="apellidos" size="40" placeholder="Escriba sus apellidos">
+<h1>maximo de caracteres o atributos</h1>
+<p>Usuario: <input type="text" name="usuario" maxlength="6"></p>
+<p>Contraseña <input type="password" name="password" minlength="6"></p>
+<input type="submit" name="Enviar">
+<h1>botones</h1>
+<input type="submit" name="Enviar">
+<button type="submit">
+	<img src="send.svg" alt="imagen" width="32" height="32" style="vertical-align: middle">Enviar
+</button>
+<h1>boton reset</h1>
+<input type="reset" name="Borrar">
+<button type="reset"> <img src="reset.svg" alt="imagen"width="32" height="32" style="vertical-align: middle">Borrar</button>
+<h1>fechas</h1>
+fecha:<input type="date" name="fecha">
+Hora:<input type="time" name="Hora">
+<h1>Casillas de verificacion</h1>
+<input type="checkbox" name="casilla">Casilla 1
+<input type="checkbox" name="casilla">Casilla 2
+<input type="checkbox" name="casilla">Casilla 3
+<h1>boton radio</h1>
+<input type="radio" name="boton" value="1">Opcion 1<br></br>
+<input type="radio" name="boton" value="2">Opcion 2<br></br>
+<input type="radio" name="boton" value="3">Opcion 3<br></br>
+<h1>seleccione el sexo</h1>
+<input type="radio" name="boton" value="1">Hombre<br></br>
+<input type="radio" name="boton" value="2">Mujer<br></br>
+<input type="radio" name="boton" value="3">Otros<br></br>
+<input type="reset" name="Borrar">
+<p>
+<input type="radio" name="boton" value="1">Hombre<br></br>
+<input type="radio" name="boton" value="2">Mujer<br></br>
+<input type="radio" name="boton" value="3">Otros<br></br>
+<input type="radio" name="boton" value="0" checked>sin respuesta<br></br></p>
+<h1>listas</h1>
+Indique su nivel: (malo, regular, bueno):
+<input type="range" name="rango" min="1" max="5" list="lista rango">
+<datalist id="Lista - rango">
+	<option value="1" label="Malo"></option>
+	<option value="2"label="Regular"></option>
+	<option value="3"label="Bueno"></option>
+	<option value="4"label="Muy Bueno"></option>
+	<option value="5"label="Excelente"></option>
+</datalist>
+<h1>area de texto</h1>
+<textarea name="texto" rows="6" cols="60">Escriba algo</textarea>
+<textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
+
+<h1>menu de opciones</h1>
+<select name="menu">
+	<option value="1">uno</option>
+	<option value="2">dos</option>
+	<option value="3">tres</option>
+</select>
+
+<select name="menu">
+	<option value="0">...</option>
+	<option value="1">uno</option>
+	<option value="2">dos</option>
+	<option value="3">tres</option>
+</select>
+</body>
+</html>
